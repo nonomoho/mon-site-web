@@ -1,0 +1,49 @@
+{
+  "name": "mon-site-web",
+  "version": "1.0.0",
+  "description": "Pattern Library tool",
+  "keywords": [
+    "ui",
+    "ui kit",
+    "design system",
+    "pattern library"
+  ],
+  "homepage": "https://github.com/tikui/tikui.git#readme",
+  "bugs": {
+    "url": "https://github.com/tikui/tikui/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Anthony Rey"
+  },
+  "main": "src/index.pug",
+  "repository": "github:tikui/tikui",
+  "scripts": {
+    "serve": "tikui-core serve",
+    "build": "tikui-core build",
+    "lint": "concurrently npm:sass:lint npm:pug:lint",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "pug:lint": "pug-lint src",
+    "sass:lint": "stylelint \"src/**/*.scss\"",
+    "sass:lint:fix": "stylelint \"src/**/*.scss\" --fix"
+  },
+  "devDependencies": {
+    "@tikui/core": "^6.0.0",
+    "@types/concurrently": "^7.0.0",
+    "concurrently": "^8.2.2",
+    "postcss-scss": "^4.0.5",
+    "prettier": "3.3.3",
+    "pug-lint": "^2.6.0",
+    "sass": "^1.77.8",
+    "stylelint": "^16.7.0",
+    "stylelint-config-concentric-order": "^5.2.0",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-order": "^6.0.4",
+    "tikuidoc-tikui": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=18.12.0",
+    "npm": ">=8.19.2"
+  }
+}
