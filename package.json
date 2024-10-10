@@ -16,7 +16,7 @@
   "author": {
     "name": "Anthony Rey"
   },
-  "main": "src/index.pug",
+  "main": "src/documentation.pug",
   "repository": "github:tikui/tikui",
   "scripts": {
     "serve": "tikui-core serve",
